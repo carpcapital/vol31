@@ -10,8 +10,8 @@ html {
   -ms-text-size-adjust: 100%;
   /* 2 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */
   font-family: sans-serif;
+  /* 2 */
 }
 
 /**
@@ -53,10 +53,10 @@ audio,
 canvas,
 progress,
 video {
-  /* 2 */
   display: inline-block;
   /* 1 */
   vertical-align: baseline;
+  /* 2 */
 }
 
 /**
@@ -230,12 +230,12 @@ input,
 optgroup,
 select,
 textarea {
-  /* 3 */
   /* 2 */
   margin: 0;
   color: inherit;
   /* 1 */
   font: inherit;
+  /* 3 */
 }
 
 /**
@@ -264,13 +264,13 @@ select {
  *    `input` and others.
  */
 button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+html input[type=button],
+input[type=reset],
+input[type=submit] {
   -webkit-appearance: button;
-  /* 3 */
   /* 2 */
   cursor: pointer;
+  /* 3 */
 }
 
 /**
@@ -305,12 +305,12 @@ input {
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
-input[type="checkbox"],
-input[type="radio"] {
-  /* 2 */
+input[type=checkbox],
+input[type=radio] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
+  /* 2 */
 }
 
 /**
@@ -318,8 +318,8 @@ input[type="radio"] {
  * `font-size` values of the `input`, it causes the cursor style of the
  * decrement button to change from `default` to `text`.
  */
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -327,11 +327,11 @@ input[type="number"]::-webkit-outer-spin-button {
  * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
  * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
  */
-input[type="search"] {
+input[type=search] {
   -webkit-appearance: textfield;
-  /* 2 */
   /* 1 */
   box-sizing: content-box;
+  /* 2 */
 }
 
 /**
@@ -339,8 +339,8 @@ input[type="search"] {
  * Safari (but not Chrome) clips the cancel button when the search input has
  * padding (and `textfield` appearance).
  */
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -358,10 +358,10 @@ fieldset {
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
 legend {
-  /* 2 */
   /* 1 */
   padding: 0;
   border: 0;
+  /* 2 */
 }
 
 /**
@@ -403,11 +403,10 @@ th {
 @font-face {
   src: url("../fonts/fontawesome/fontawesome-webfont.eot?v=4.7.0");
   src: url("../fonts/fontawesome/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
-  font-family: 'FontAwesome';
+  font-family: "FontAwesome";
   font-style: normal;
   font-weight: normal;
 }
-
 .fa {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -419,7 +418,7 @@ th {
 
 /* makes the font 33% larger relative to the icon container */
 .fa-lg {
-  font-size: 1.33333em;
+  font-size: 1.3333333333em;
   line-height: .75em;
   vertical-align: -15%;
 }
@@ -441,12 +440,12 @@ th {
 }
 
 .fa-fw {
-  width: 1.28571em;
+  width: 1.2857142857em;
   text-align: center;
 }
 
 .fa-ul {
-  margin-left: 2.14286em;
+  margin-left: 2.1428571429em;
   padding-left: 0;
   list-style-type: none;
 }
@@ -456,13 +455,13 @@ th {
 
 .fa-li {
   position: absolute;
-  top: .14286em;
-  left: -2.14286em;
-  width: 2.14286em;
+  top: .1428571429em;
+  left: -2.1428571429em;
+  width: 2.1428571429em;
   text-align: center;
 }
 .fa-li.fa-lg {
-  left: -1.85714em;
+  left: -1.8571428571em;
 }
 
 .fa-border {
@@ -482,7 +481,6 @@ th {
 .fa.fa-pull-left {
   margin-right: .3em;
 }
-
 .fa.fa-pull-right {
   margin-left: .3em;
 }
@@ -499,7 +497,6 @@ th {
 .fa.pull-left {
   margin-right: .3em;
 }
-
 .fa.pull-right {
   margin-left: .3em;
 }
@@ -511,7 +508,6 @@ th {
 .fa-pulse {
   animation: fa-spin 1s infinite steps(8);
 }
-
 @keyframes fa-spin {
   0% {
     transform: rotate(0deg);
@@ -520,7 +516,6 @@ th {
     transform: rotate(359deg);
   }
 }
-
 .fa-rotate-90 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
   transform: rotate(90deg);
@@ -3397,6 +3392,7 @@ th {
 }
 
 .sr-only {
+  clip: rect(0, 0, 0, 0);
   position: absolute;
   width: 1px;
   height: 1px;
@@ -3404,36 +3400,34 @@ th {
   padding: 0;
   overflow: hidden;
   border: 0;
-  clip: rect(0, 0, 0, 0);
 }
 
 .sr-only-focusable:active,
 .sr-only-focusable:focus {
+  clip: auto;
   position: static;
   width: auto;
   height: auto;
   margin: 0;
   overflow: visible;
-  clip: auto;
 }
 
 @font-face {
   src: url("../fonts/xiconbasic/xiconbasic.eot?3xwdrq");
   src: url("../fonts/xiconbasic/xiconbasic.eot?3xwdrq#iefix") format("embedded-opentype"), url("../fonts/xiconbasic/xiconbasic.ttf?3xwdrq") format("truetype"), url("../fonts/xiconbasic/xiconbasic.woff?3xwdrq") format("woff"), url("../fonts/xiconbasic/xiconbasic.svg?3xwdrq#xiconbasic") format("svg");
-  font-family: 'xiconbasic';
+  font-family: "xiconbasic";
   font-style: normal;
   font-weight: normal;
 }
-
-[class^='xiconbasic-'],
-[class*=' xiconbasic-'] {
+[class^=xiconbasic-],
+[class*=" xiconbasic-"] {
   speak: none;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* use !important to prevent issues with browser extensions that change fonts */
   display: inline-block;
-  font-family: 'xiconbasic' !important;
+  font-family: "xiconbasic" !important;
   font-size: 24px;
   font-style: normal;
   font-variant: normal;
@@ -3443,433 +3437,351 @@ th {
 }
 
 .xiconbasic-book:before {
-  content: '\e900';
+  content: "";
 }
-
 .xiconbasic-heart:before {
-  content: '\e901';
+  content: "";
 }
-
 .xiconbasic-search:before {
-  content: '\e902';
+  content: "";
 }
-
 .xiconbasic-basket:before {
-  content: '\e903';
+  content: "";
 }
-
 .xiconbasic-person:before {
-  content: '\e904';
+  content: "";
 }
-
 .xiconbasic-cross:before {
-  content: '\e905';
+  content: "";
 }
-
 .xiconbasic-print:before {
-  content: '\e906';
+  content: "";
 }
-
 .xiconbasic-camera:before {
-  content: '\e907';
+  content: "";
 }
-
 .xiconbasic-copy:before {
-  content: '\e908';
+  content: "";
 }
-
 .xiconbasic-good:before {
-  content: '\e909';
+  content: "";
 }
-
 .xiconbasic-eye:before {
-  content: '\e90a';
+  content: "";
 }
-
 .xiconbasic-home:before {
-  content: '\e90b';
+  content: "";
 }
-
 .xiconbasic-edit:before {
-  content: '\e90c';
+  content: "";
 }
-
 .xiconbasic-umbrella:before {
-  content: '\e90d';
+  content: "";
 }
-
 .xiconbasic-volume:before {
-  content: '\e90e';
+  content: "";
 }
-
 .xiconbasic-shop:before {
-  content: '\e90f';
+  content: "";
 }
-
 .xiconbasic-arrow-right:before {
-  content: '\e910';
+  content: "";
 }
-
 .xiconbasic-jewel:before {
-  content: '\e911';
+  content: "";
 }
-
 .xiconbasic-folder:before {
-  content: '\e912';
+  content: "";
 }
-
 .xiconbasic-folder-add:before {
-  content: '\e913';
+  content: "";
 }
-
 .xiconbasic-upload-cloud:before {
-  content: '\e914';
+  content: "";
 }
-
 .xiconbasic-download-cloud:before {
-  content: '\e915';
+  content: "";
 }
-
 .xiconbasic-layers:before {
-  content: '\e916';
+  content: "";
 }
-
 .xiconbasic-separate:before {
-  content: '\e917';
+  content: "";
 }
-
 .xiconbasic-attach:before {
-  content: '\e918';
+  content: "";
 }
-
 .xiconbasic-arrow-left:before {
-  content: '\e919';
+  content: "";
 }
-
 .xiconbasic-display-tile:before {
-  content: '\e91a';
+  content: "";
 }
-
 .xiconbasic-display-line:before {
-  content: '\e91b';
+  content: "";
 }
-
 .xiconbasic-weather:before {
-  content: '\e91c';
+  content: "";
 }
-
 .xiconbasic-rain:before {
-  content: '\e91d';
+  content: "";
 }
-
 .xiconbasic-pin:before {
-  content: '\e91e';
+  content: "";
 }
-
 .xiconbasic-flag:before {
-  content: '\e91f';
+  content: "";
 }
-
 .xiconbasic-misc:before {
-  content: '\e920';
+  content: "";
 }
-
 .xiconbasic-misc-vertical:before {
-  content: '\e948';
+  content: "";
 }
-
 .xiconbasic-wallet:before {
-  content: '\e921';
+  content: "";
 }
-
 .xiconbasic-gear:before {
-  content: '\e922';
+  content: "";
 }
-
 .xiconbasic-minus:before {
-  content: '\e923';
+  content: "";
 }
-
 .xiconbasic-plus:before {
-  content: '\e924';
+  content: "";
 }
-
 .xiconbasic-hamburger:before {
-  content: '\e925';
+  content: "";
 }
-
 .xiconbasic-ok:before {
-  content: '\e926';
+  content: "";
 }
-
 .xiconbasic-mail:before {
-  content: '\e927';
+  content: "";
 }
-
 .xiconbasic-upload:before {
-  content: '\e928';
+  content: "";
 }
-
 .xiconbasic-download:before {
-  content: '\e929';
+  content: "";
 }
-
 .xiconbasic-file:before {
-  content: '\e92a';
+  content: "";
 }
-
 .xiconbasic-link:before {
-  content: '\e92b';
+  content: "";
 }
-
 .xiconbasic-message:before {
-  content: '\e92c';
+  content: "";
 }
-
 .xiconbasic-mic:before {
-  content: '\e92d';
+  content: "";
 }
-
 .xiconbasic-battery:before {
-  content: '\e92e';
+  content: "";
 }
-
 .xiconbasic-shopping:before {
-  content: '\e92f';
+  content: "";
 }
-
 .xiconbasic-clock:before {
-  content: '\e930';
+  content: "";
 }
-
 .xiconbasic-expand:before {
-  content: '\e931';
+  content: "";
 }
-
 .xiconbasic-calendar:before {
-  content: '\e932';
+  content: "";
 }
-
 .xiconbasic-dustbox:before {
-  content: '\e933';
+  content: "";
 }
-
 .xiconbasic-bookmark-add:before {
-  content: '\e934';
+  content: "";
 }
-
 .xiconbasic-bookmark-remove:before {
-  content: '\e935';
+  content: "";
 }
-
 .xiconbasic-indent:before {
-  content: '\e936';
+  content: "";
 }
-
 .xiconbasic-device:before {
-  content: '\e937';
+  content: "";
 }
-
 .xiconbasic-image:before {
-  content: '\e938';
+  content: "";
 }
-
 .xiconbasic-tag:before {
-  content: '\e939';
+  content: "";
 }
-
 .xiconbasic-graph:before {
-  content: '\e93a';
+  content: "";
 }
-
 .xiconbasic-chest:before {
-  content: '\e93b';
+  content: "";
 }
-
 .xiconbasic-font:before {
-  content: '\e93c';
+  content: "";
 }
-
 .xiconbasic-create:before {
-  content: '\e93d';
+  content: "";
 }
-
 .xiconbasic-play:before {
-  content: '\e93e';
+  content: "";
 }
-
 .xiconbasic-pause:before {
-  content: '\e93f';
+  content: "";
 }
-
 .xiconbasic-cart:before {
-  content: '\e940';
+  content: "";
 }
-
 .xiconbasic-minus-circle:before {
-  content: '\e941';
+  content: "";
 }
-
 .xiconbasic-plus-circle:before {
-  content: '\e942';
+  content: "";
 }
-
 .xiconbasic-lists:before {
-  content: '\e943';
+  content: "";
 }
-
 .xiconbasic-center:before {
-  content: '\e944';
+  content: "";
 }
-
 .xiconbasic-window:before {
-  content: '\e945';
+  content: "";
 }
-
 .xiconbasic-health:before {
-  content: '\e946';
+  content: "";
 }
-
 .xiconbasic-settings:before {
-  content: '\e947';
+  content: "";
 }
-
 .xiconbasic-clipboard:before {
-  content: '\e949';
+  content: "";
 }
-
 .xiconbasic-file-excel-box:before {
-  content: '\e94a';
+  content: "";
 }
-
 .xiconbasic-file-powerpoint-box:before {
-  content: '\e94b';
+  content: "";
 }
-
 .xiconbasic-file-word-box:before {
-  content: '\e94c';
+  content: "";
 }
-
 .xiconbasic-file-pdf-box:before {
-  content: '\e94d';
+  content: "";
 }
-
 .xiconbasic-toc:before {
-  content: '\e94e';
+  content: "";
 }
-
 .xiconbasic-logout:before {
-  content: '\e94f';
+  content: "";
 }
-
 .xiconbasic-close-circle:before {
-  content: '\e950';
+  content: "";
 }
-
 .xiconbasic-chevron-down:before {
-  content: '\e951';
+  content: "";
 }
-
 .xiconbasic-chevron-left:before {
-  content: '\e952';
+  content: "";
 }
-
 .xiconbasic-chevron-right:before {
-  content: '\e953';
+  content: "";
 }
-
 .xiconbasic-chevron-up:before {
-  content: '\e954';
+  content: "";
 }
-
 .xiconbasic-close:before {
-  content: '\e955';
+  content: "";
 }
-
 .xiconbasic-delete:before {
-  content: '\e956';
+  content: "";
 }
-
 .xiconbasic-pencil:before {
-  content: '\e957';
+  content: "";
 }
-
 .xiconbasic-film:before {
-  content: '\e958';
+  content: "";
 }
-
 .xiconbasic-type_image:before {
-  content: '\e959';
+  content: "";
 }
-
 .xiconbasic-caret-up:before {
-  content: '\e95a';
+  content: "";
 }
-
 .xiconbasic-caret-down:before {
-  content: '\e95b';
+  content: "";
 }
-
 .xiconbasic-crown:before {
-  content: '\e95c';
+  content: "";
 }
-
 .xiconbasic-folder-outline:before {
-  content: '\e95d';
+  content: "";
 }
-
 .xiconbasic-history:before {
-  content: '\e95e';
+  content: "";
 }
-
 .xiconbasic-account-circle:before {
-  content: '\e95f';
+  content: "";
 }
-
 .xiconbasic-check:before {
-  content: '\e960';
+  content: "";
 }
-
 .xiconbasic-bookcustom:before {
-  content: '\e961';
+  content: "";
 }
-
 .xiconbasic-tag_another:before {
-  content: "\e962";
+  content: "";
 }
-
 .xiconbasic-globe:before {
-  content: "\e963";
+  content: "";
 }
-
 .xiconbasic-qrcode:before {
-  content: "\e964";
+  content: "";
 }
-
 .xiconbasic-play-movie:before {
-  content: "\e965";
+  content: "";
 }
-
 .xiconbasic-info-circle:before {
-  content: "\e966";
+  content: "";
+}
+.xiconbasic-heart_filled:before {
+  content: "";
+}
+.xiconbasic-good_filled:before {
+  content: "";
+}
+.xiconbasic-message_filled:before {
+  content: "";
+}
+.xiconbasic-share:before {
+  content: "";
+}
+.xiconbasic-paperplane:before {
+  content: "";
+}
+.xiconbasic-loader:before {
+  content: "";
+}
+.xiconbasic-print:before {
+  content: "";
 }
 
 @font-face {
   src: url("../fonts/socicon/Socicon.eot?6mfloc");
   src: url("../fonts/socicon/Socicon.eot?6mfloc#iefix") format("embedded-opentype"), url("../fonts/socicon/Socicon.woff2?6mfloc") format("woff2"), url("../fonts/socicon/Socicon.ttf?6mfloc") format("truetype"), url("../fonts/socicon/Socicon.woff?6mfloc") format("woff"), url("../fonts/socicon/Socicon.svg?6mfloc#Socicon") format("svg");
-  font-family: 'Socicon';
+  font-family: "Socicon";
   font-style: normal;
   font-weight: normal;
 }
-
-[class^="socicon-"],
+[class^=socicon-],
 [class*=" socicon-"] {
   speak: none;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'Socicon' !important;
+  font-family: "Socicon" !important;
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
@@ -3880,687 +3792,516 @@ th {
 .socicon-tunein:before {
   content: "";
 }
-
 .socicon-gamejolt:before {
   content: "";
 }
-
 .socicon-trello:before {
   content: "";
 }
-
 .socicon-spreadshirt:before {
   content: "";
 }
-
 .socicon-airbnb:before {
   content: "";
 }
-
 .socicon-alliance:before {
   content: "";
 }
-
 .socicon-amazon:before {
   content: "";
 }
-
 .socicon-amplement:before {
   content: "";
 }
-
 .socicon-android:before {
   content: "";
 }
-
 .socicon-angellist:before {
   content: "";
 }
-
 .socicon-apple:before {
   content: "";
 }
-
 .socicon-appnet:before {
   content: "";
 }
-
 .socicon-baidu:before {
   content: "";
 }
-
 .socicon-bandcamp:before {
   content: "";
 }
-
 .socicon-battlenet:before {
   content: "";
 }
-
 .socicon-beam:before {
   content: "";
 }
-
 .socicon-bebee:before {
   content: "";
 }
-
 .socicon-bebo:before {
   content: "";
 }
-
 .socicon-behance:before {
   content: "";
 }
-
 .socicon-blizzard:before {
   content: "";
 }
-
 .socicon-blogger:before {
   content: "";
 }
-
 .socicon-buffer:before {
   content: "";
 }
-
 .socicon-chrome:before {
   content: "";
 }
-
 .socicon-coderwall:before {
   content: "";
 }
-
 .socicon-curse:before {
   content: "";
 }
-
 .socicon-dailymotion:before {
   content: "";
 }
-
 .socicon-deezer:before {
   content: "";
 }
-
 .socicon-delicious:before {
   content: "";
 }
-
 .socicon-deviantart:before {
   content: "";
 }
-
 .socicon-diablo:before {
   content: "";
 }
-
 .socicon-digg:before {
   content: "";
 }
-
 .socicon-discord:before {
   content: "";
 }
-
 .socicon-disqus:before {
   content: "";
 }
-
 .socicon-douban:before {
   content: "";
 }
-
 .socicon-draugiem:before {
   content: "";
 }
-
 .socicon-dribbble:before {
   content: "";
 }
-
 .socicon-drupal:before {
   content: "";
 }
-
 .socicon-ebay:before {
   content: "";
 }
-
 .socicon-ello:before {
   content: "";
 }
-
 .socicon-endomodo:before {
   content: "";
 }
-
 .socicon-envato:before {
   content: "";
 }
-
 .socicon-etsy:before {
   content: "";
 }
-
 .socicon-facebook:before {
   content: "";
 }
-
 .socicon-feedburner:before {
   content: "";
 }
-
 .socicon-filmweb:before {
   content: "";
 }
-
 .socicon-firefox:before {
   content: "";
 }
-
 .socicon-flattr:before {
   content: "";
 }
-
 .socicon-flickr:before {
   content: "";
 }
-
 .socicon-formulr:before {
   content: "";
 }
-
 .socicon-forrst:before {
   content: "";
 }
-
 .socicon-foursquare:before {
   content: "";
 }
-
 .socicon-friendfeed:before {
   content: "";
 }
-
 .socicon-github:before {
   content: "";
 }
-
 .socicon-goodreads:before {
   content: "";
 }
-
 .socicon-google:before {
   content: "";
 }
-
 .socicon-googlescholar:before {
   content: "";
 }
-
 .socicon-googlegroups:before {
   content: "";
 }
-
 .socicon-googlephotos:before {
   content: "";
 }
-
 .socicon-googleplus:before {
   content: "";
 }
-
 .socicon-grooveshark:before {
   content: "";
 }
-
 .socicon-hackerrank:before {
   content: "";
 }
-
 .socicon-hearthstone:before {
   content: "";
 }
-
 .socicon-hellocoton:before {
   content: "";
 }
-
 .socicon-heroes:before {
   content: "";
 }
-
 .socicon-hitbox:before {
   content: "";
 }
-
 .socicon-horde:before {
   content: "";
 }
-
 .socicon-houzz:before {
   content: "";
 }
-
 .socicon-icq:before {
   content: "";
 }
-
 .socicon-identica:before {
   content: "";
 }
-
 .socicon-imdb:before {
   content: "";
 }
-
 .socicon-instagram:before {
   content: "";
 }
-
 .socicon-issuu:before {
   content: "";
 }
-
 .socicon-istock:before {
   content: "";
 }
-
 .socicon-itunes:before {
   content: "";
 }
-
 .socicon-keybase:before {
   content: "";
 }
-
 .socicon-lanyrd:before {
   content: "";
 }
-
 .socicon-lastfm:before {
   content: "";
 }
-
 .socicon-line:before {
   content: "";
 }
-
 .socicon-linkedin:before {
   content: "";
 }
-
 .socicon-livejournal:before {
   content: "";
 }
-
 .socicon-lyft:before {
   content: "";
 }
-
 .socicon-macos:before {
   content: "";
 }
-
 .socicon-mail:before {
   content: "";
 }
-
 .socicon-medium:before {
   content: "";
 }
-
 .socicon-meetup:before {
   content: "";
 }
-
 .socicon-mixcloud:before {
   content: "";
 }
-
 .socicon-modelmayhem:before {
   content: "";
 }
-
 .socicon-mumble:before {
   content: "";
 }
-
 .socicon-myspace:before {
   content: "";
 }
-
 .socicon-newsvine:before {
   content: "";
 }
-
 .socicon-nintendo:before {
   content: "";
 }
-
 .socicon-npm:before {
   content: "";
 }
-
 .socicon-odnoklassniki:before {
   content: "";
 }
-
 .socicon-openid:before {
   content: "";
 }
-
 .socicon-opera:before {
   content: "";
 }
-
 .socicon-outlook:before {
   content: "";
 }
-
 .socicon-overwatch:before {
   content: "";
 }
-
 .socicon-patreon:before {
   content: "";
 }
-
 .socicon-paypal:before {
   content: "";
 }
-
 .socicon-periscope:before {
   content: "";
 }
-
 .socicon-persona:before {
   content: "";
 }
-
 .socicon-pinterest:before {
   content: "";
 }
-
 .socicon-play:before {
   content: "";
 }
-
 .socicon-player:before {
   content: "";
 }
-
 .socicon-playstation:before {
   content: "";
 }
-
 .socicon-pocket:before {
   content: "";
 }
-
 .socicon-qq:before {
   content: "";
 }
-
 .socicon-quora:before {
   content: "";
 }
-
 .socicon-raidcall:before {
   content: "";
 }
-
 .socicon-ravelry:before {
   content: "";
 }
-
 .socicon-reddit:before {
   content: "";
 }
-
 .socicon-renren:before {
   content: "";
 }
-
 .socicon-researchgate:before {
   content: "";
 }
-
 .socicon-residentadvisor:before {
   content: "";
 }
-
 .socicon-reverbnation:before {
   content: "";
 }
-
 .socicon-rss:before {
   content: "";
 }
-
 .socicon-sharethis:before {
   content: "";
 }
-
 .socicon-skype:before {
   content: "";
 }
-
 .socicon-slideshare:before {
   content: "";
 }
-
 .socicon-smugmug:before {
   content: "";
 }
-
 .socicon-snapchat:before {
   content: "";
 }
-
 .socicon-songkick:before {
   content: "";
 }
-
 .socicon-soundcloud:before {
   content: "";
 }
-
 .socicon-spotify:before {
   content: "";
 }
-
 .socicon-stackexchange:before {
   content: "";
 }
-
 .socicon-stackoverflow:before {
   content: "";
 }
-
 .socicon-starcraft:before {
   content: "";
 }
-
 .socicon-stayfriends:before {
   content: "";
 }
-
 .socicon-steam:before {
   content: "";
 }
-
 .socicon-storehouse:before {
   content: "";
 }
-
 .socicon-strava:before {
   content: "";
 }
-
 .socicon-streamjar:before {
   content: "";
 }
-
 .socicon-stumbleupon:before {
   content: "";
 }
-
 .socicon-swarm:before {
   content: "";
 }
-
 .socicon-teamspeak:before {
   content: "";
 }
-
 .socicon-teamviewer:before {
   content: "";
 }
-
 .socicon-technorati:before {
   content: "";
 }
-
 .socicon-telegram:before {
   content: "";
 }
-
 .socicon-tripadvisor:before {
   content: "";
 }
-
 .socicon-tripit:before {
   content: "";
 }
-
 .socicon-triplej:before {
   content: "";
 }
-
 .socicon-tumblr:before {
   content: "";
 }
-
 .socicon-twitch:before {
   content: "";
 }
-
 .socicon-twitter:before {
   content: "";
 }
-
 .socicon-uber:before {
   content: "";
 }
-
 .socicon-ventrilo:before {
   content: "";
 }
-
 .socicon-viadeo:before {
   content: "";
 }
-
 .socicon-viber:before {
   content: "";
 }
-
 .socicon-viewbug:before {
   content: "";
 }
-
 .socicon-vimeo:before {
   content: "";
 }
-
 .socicon-vine:before {
   content: "";
 }
-
 .socicon-vkontakte:before {
   content: "";
 }
-
 .socicon-warcraft:before {
   content: "";
 }
-
 .socicon-wechat:before {
   content: "";
 }
-
 .socicon-weibo:before {
   content: "";
 }
-
 .socicon-whatsapp:before {
   content: "";
 }
-
 .socicon-wikipedia:before {
   content: "";
 }
-
 .socicon-windows:before {
   content: "";
 }
-
 .socicon-wordpress:before {
   content: "";
 }
-
 .socicon-wykop:before {
   content: "";
 }
-
 .socicon-xbox:before {
   content: "";
 }
-
 .socicon-xing:before {
   content: "";
 }
-
 .socicon-yahoo:before {
   content: "";
 }
-
 .socicon-yammer:before {
   content: "";
 }
-
 .socicon-yandex:before {
   content: "";
 }
-
 .socicon-yelp:before {
   content: "";
 }
-
 .socicon-younow:before {
   content: "";
 }
-
 .socicon-youtube:before {
   content: "";
 }
-
 .socicon-zapier:before {
   content: "";
 }
-
 .socicon-zerply:before {
   content: "";
 }
-
 .socicon-zomato:before {
   content: "";
 }
-
 .socicon-zynga:before {
   content: "";
 }
@@ -4576,18 +4317,17 @@ th {
 @font-face {
   src: url("../fonts/one_viewer/one_viewer.eot?qowxxr");
   src: url("../fonts/one_viewer/one_viewer.eot?qowxxr#iefix") format("embedded-opentype"), url("../fonts/one_viewer/one_viewer.ttf?qowxxr") format("truetype"), url("../fonts/one_viewer/one_viewer.woff?qowxxr") format("woff"), url("../fonts/one_viewer/one_viewer.svg?qowxxr#one_viewer") format("svg");
-  font-family: 'one_viewer';
+  font-family: "one_viewer";
   font-style: normal;
   font-weight: normal;
 }
-
 i.oneviewer {
   speak: none;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'one_viewer' !important;
+  font-family: "one_viewer" !important;
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
@@ -4597,207 +4337,171 @@ i.oneviewer {
 
 i.oneviewer-search:before {
   /* 検索フォームのボタンアイコン */
-  content: '\e900';
+  content: "";
 }
-
 i.oneviewer-last:before {
   /* ページ移動：最後 */
-  content: '\e901';
+  content: "";
 }
-
 i.oneviewer-next:before {
   /* ページ移動：次へ、PC 用動画ビューア　再生 */
-  content: '\e902';
+  content: "";
 }
-
 i.oneviewer-prev:before {
   /* ページ移動：前へ */
-  content: '\e903';
+  content: "";
 }
-
 i.oneviewer-first:before {
   /* ページ移動：先頭 */
-  content: '\e904';
+  content: "";
 }
-
 i.oneviewer-share:before {
   /* シェア（埋め込み時の右に表示されるものは viewer_right_～ を使用のこ と） */
-  content: '\e905';
+  content: "";
 }
-
 i.oneviewer-viewer_right_app:before {
   /* Poste アプリで開く */
-  content: '\e906';
+  content: "";
 }
-
 i.oneviewer-minifier:before {
   /* ズーム（縮小） */
-  content: '\e907';
+  content: "";
 }
-
 i.oneviewer-magnifier:before {
   /* ズーム（拡大） */
-  content: '\e908';
+  content: "";
 }
-
 i.oneviewer-viewer_right_maximize:before {
   /* 埋め込み時全画面 */
-  content: '\e909';
+  content: "";
 }
-
 i.oneviewer-viewer_right_share:before {
   /* 埋め込み時シェア */
-  content: '\e90a';
+  content: "";
 }
-
 i.oneviewer-viewer_right_minimize:before {
   /* 埋め込み時全画面解除 */
-  content: '\e90b';
+  content: "";
 }
-
 i.oneviewer-printer:before {
   /* 印刷（埋め込み時の右に表示されるものは viewer_right_～ を使用のこと） */
-  content: '\e90c';
+  content: "";
 }
-
 i.oneviewer-enlargebar_sd_back:before {
   /* SD 用拡大バー　戻る */
-  content: '\e90d';
+  content: "";
 }
-
 i.oneviewer-menu:before {
   /* ビューアメニュー */
-  content: '\e90e';
+  content: "";
 }
-
 i.oneviewer-times-circle:before {
   /* 検索時消去ボタン */
-  content: '\e90f';
+  content: "";
 }
-
 i.oneviewer-viewer_right_printer:before {
   /* 埋め込み時印刷 */
-  content: '\e912';
+  content: "";
 }
-
 i.oneviewer-enlargebar_sd_larger:before {
   /* SD 用拡大バー　拡大 */
-  content: '\e914';
+  content: "";
 }
-
 i.oneviewer-enlargebar_sd_normal:before {
   /* SD 用拡大バー　通常 */
-  content: '\e915';
+  content: "";
 }
-
 i.oneviewer-enlargebar_pc_normal:before {
   /* PC 用拡大バー　通常 */
-  content: '\e921';
+  content: "";
 }
-
 i.oneviewer-enlargebar_pc_larger:before {
   /* PC 用拡大バー　拡大 */
-  content: '\e920';
+  content: "";
 }
-
 i.oneviewer-enlargebar_pc_maximize:before {
   /* PC 用拡大バー　全画面 */
-  content: '\e922';
+  content: "";
 }
-
 i.oneviewer-sd_menuclose:before {
   /* SD 用ビューア　メニュー閉じる */
-  content: '\e910';
+  content: "";
 }
-
 i.oneviewer-sd_search:before {
   /* SD 用ビューア　検索 */
-  content: '\e911';
+  content: "";
 }
-
 i.oneviewer-sd_share:before {
   /* SD 用ビューア　シェア */
-  content: '\e913';
+  content: "";
 }
-
 i.oneviewer-sd_thumbs:before {
   /* SD 用ビューア　サムネイル */
-  content: '\e916';
+  content: "";
 }
-
 i.oneviewer-sd_toc:before {
   /* SD 用ビューア　目次 */
-  content: '\e917';
+  content: "";
 }
-
 i.oneviewer-sd_movie_maximize:before {
   /* SD 用動画ビューア　最大化 */
-  content: '\e918';
+  content: "";
 }
-
 i.oneviewer-sd_movie_minimize:before {
   /* SD 用動画ビューア　最小化 */
-  content: '\e919';
+  content: "";
 }
-
 i.oneviewer-pc_mute:before {
   /* PC 用動画ビューア　ミュート */
-  content: '\e91a';
+  content: "";
 }
-
 i.oneviewer-sd_mute:before {
   /* SD 用動画ビューア　ミュート */
-  content: '\e91b';
+  content: "";
 }
-
 i.oneviewer-pc_pause:before {
   /* PC 用動画ビューア　一時停止 */
-  content: '\e91c';
+  content: "";
 }
-
 i.oneviewer-sd_pause:before {
   /* SD 用動画ビューア　一時停止 */
-  content: '\e91d';
+  content: "";
 }
-
 i.oneviewer-sd_play:before {
   /* SD 用動画ビューア　再生 */
-  content: '\e91e';
+  content: "";
 }
-
 i.oneviewer-sd_share_movie:before {
   /* SD 用動画ビューア　シェア */
-  content: '\e91f';
+  content: "";
 }
-
 i.oneviewer-pc_volume_on:before {
   /* PC 用動画ビューア　音量オン */
-  content: '\e923';
+  content: "";
 }
-
 i.oneviewer-sd_volume_on:before {
   /* SD 用動画ビューア　音量オン */
-  content: '\e924';
+  content: "";
 }
 
 /*!
  * Waves v0.7.5
- * http://fian.my.id/Waves
- *
- * Copyright 2014-2016 Alfiana E. Sibuea and other contributors
- * Released under the MIT license
- * https://github.com/fians/Waves/blob/master/LICENSE
+ * http://fian.my.id/Waves 
+ * 
+ * Copyright 2014-2016 Alfiana E. Sibuea and other contributors 
+ * Released under the MIT license 
+ * https://github.com/fians/Waves/blob/master/LICENSE 
  */
 .waves-effect {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none;
   -webkit-tap-highlight-color: transparent;
   display: inline-block;
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  user-select: none;
 }
 .waves-effect .waves-ripple {
   -webkit-transition: all .5s ease-out;
@@ -4853,6 +4557,7 @@ i.oneviewer-sd_volume_on:before {
 .waves-button:hover,
 .waves-button:visited,
 .waves-button-input {
+  z-index: 1;
   border: none;
   outline: none;
   background-color: rgba(0, 0, 0, 0);
@@ -4861,10 +4566,9 @@ i.oneviewer-sd_volume_on:before {
   line-height: 1em;
   text-align: center;
   text-decoration: none;
+  vertical-align: middle;
   white-space: nowrap;
   cursor: pointer;
-  vertical-align: middle;
-  z-index: 1;
 }
 
 .waves-button {
@@ -4885,10 +4589,10 @@ i.oneviewer-sd_volume_on:before {
   padding: 0;
 }
 .waves-input-wrapper .waves-button-input {
+  z-index: 1;
   position: relative;
   top: 0;
   left: 0;
-  z-index: 1;
 }
 
 .waves-circle {
@@ -4927,7 +4631,7 @@ main {
 body {
   overflow: hidden;
   background-color: #2a2a2a;
-  font-family: "latoregular","ヒラギノ角ゴ Pro W3","ヒラギノ角ゴ3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"MS PGothic",Verdana,sans-serif;
+  font-family: "latoregular", "ヒラギノ角ゴ Pro W3", "ヒラギノ角ゴ3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS PGothic", Verdana, sans-serif;
 }
 body.noApp .viewer-wrap__buttons__operation .btn-operation--app {
   display: none;
@@ -4937,12 +4641,12 @@ body.noApp .viewer-wrap__buttons__operation .btn-operation--browser {
 }
 
 * {
+  box-sizing: border-box;
+  word-break: break-all;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  box-sizing: border-box;
-  word-break: break-all;
 }
 
 .viewer-wrap {
@@ -4965,6 +4669,7 @@ body.noApp .viewer-wrap__buttons__operation .btn-operation--browser {
   animation: hideqr .2s ease-in-out 0s;
 }
 .viewer-wrap__inner {
+  z-index: 2;
   position: relative;
   width: 100%;
   min-width: 320px;
@@ -4972,7 +4677,6 @@ body.noApp .viewer-wrap__buttons__operation .btn-operation--browser {
   height: 206px;
   margin: 0 auto;
   font-size: 0;
-  z-index: 2;
 }
 @media (max-width: 349px) {
   .viewer-wrap__inner {
@@ -4980,13 +4684,13 @@ body.noApp .viewer-wrap__buttons__operation .btn-operation--browser {
   }
 }
 .viewer-wrap__concealer {
+  z-index: 1;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   background-color: #2a2a2a;
-  z-index: 1;
 }
 .viewer-wrap__image {
   display: inline-table;
@@ -5042,6 +4746,7 @@ body.noApp .viewer-wrap__buttons__operation .btn-operation--browser {
 }
 .viewer-wrap__qrcode {
   display: none;
+  z-index: 3;
   position: absolute;
   top: 0;
   right: 0;
@@ -5052,7 +4757,6 @@ body.noApp .viewer-wrap__buttons__operation .btn-operation--browser {
   background-color: rgba(0, 0, 0, .85);
   animation: showqr .2s ease-in-out 0s;
   opacity: 0;
-  z-index: 3;
 }
 .viewer-wrap__qrcode__contents {
   display: -ms-flexbox;
@@ -5068,6 +4772,7 @@ body.noApp .viewer-wrap__buttons__operation .btn-operation--browser {
   font-size: 0;
 }
 .viewer-wrap__qrcode__contents__close {
+  z-index: 2;
   position: absolute;
   top: 10px;
   right: 10px;
@@ -5075,7 +4780,6 @@ body.noApp .viewer-wrap__buttons__operation .btn-operation--browser {
   height: 30px;
   border-radius: 2px;
   color: #fff;
-  z-index: 2;
 }
 .viewer-wrap__qrcode__contents__close .xiconbasic-close {
   font-size: 30px;
@@ -5113,6 +4817,7 @@ body.noApp .viewer-wrap__buttons__operation .btn-operation--browser {
 .viewer-wrap__qrcode__contents__image__frame {
   width: 140px;
   height: 140px;
+  padding: 8px;
   border: 4px solid #666;
   background-color: #fff;
 }
@@ -5129,7 +4834,6 @@ body.noApp .viewer-wrap__buttons__operation .btn-operation--browser {
     opacity: 1;
   }
 }
-
 @keyframes hideqr {
   0% {
     display: block;
@@ -5143,7 +4847,6 @@ body.noApp .viewer-wrap__buttons__operation .btn-operation--browser {
     opacity: 0;
   }
 }
-
 /* ボタン */
 .btn {
   display: inline-block;
@@ -5203,8 +4906,8 @@ body.noApp .viewer-wrap__buttons__operation .btn-operation--browser {
 }
 .btn.btn-share--qrcode:before {
   margin: calc(-1 * (100vw - 164px - 15px) * .0612244897959184 - 3px) 0 0 calc(-1 * (100vw - 164px - 15px) * .0612244897959184 - 3px) !important;
-  font-family: 'one_viewer';
-  content: '\e90a';
+  font-family: "one_viewer";
+  content: "";
 }
 @media (min-width: 375px) {
   .btn.btn-share--qrcode:before {
@@ -5215,21 +4918,21 @@ body.noApp .viewer-wrap__buttons__operation .btn-operation--browser {
   background-color: #3e5b98;
 }
 .btn.btn-share--facebook:before {
-  font-family: 'Socicon';
+  font-family: "Socicon";
   content: "";
 }
 .btn.btn-share--twitter {
   background-color: #4da7de;
 }
 .btn.btn-share--twitter:before {
-  font-family: 'Socicon';
+  font-family: "Socicon";
   content: "";
 }
 .btn.btn-share--line {
   background-color: #00b901;
 }
 .btn.btn-share--line:before {
-  font-family: 'Socicon';
+  font-family: "Socicon";
   content: "";
 }
 .btn.btn-share:before {
@@ -5249,14 +4952,13 @@ body.noApp .viewer-wrap__buttons__operation .btn-operation--browser {
 .btn-share-wrap {
   display: inline-block;
   position: relative;
-  width: 31px;
-  height: 31px;
-  margin-right: 6.12245%;
+  width: calc((100% - (6.1224489796% * 3)) / 4);
+  margin-right: 6.1224489796%;
 }
 .btn-share-wrap:before {
   display: block;
   padding-top: 100%;
-  content: '';
+  content: "";
 }
 .btn-share-wrap:last-child {
   margin-right: 0;
